@@ -45,5 +45,7 @@ body,html{
 }
 @font-face { font-family: loverFont; src: url('/LoversQuarrel-Regular.ttf'); } 
 #letter {
-   font-family: loverFont
+   font-family: loverFont;
+   max-width: fit-content;
+  margin-inline: auto;
 }
