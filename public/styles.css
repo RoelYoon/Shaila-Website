@@ -1,8 +1,11 @@
 body > *{
     position: relative;
     z-index: 2;
-    color: #7703fc;
+    color: white;
     overscroll-behavior: none;
+}
+body{
+    background-color: color: #7703fc;;
 }
 h1{
     text-align: center;
