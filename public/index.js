@@ -40,6 +40,9 @@ renderer.setPixelRatio(window.devicePixelRatio);
 renderer.render(scene,camera); 
 canvas.hidden = true;
 
+const letter  = document.querySelector("#letter");
+letter.hidden=false;
+
 const interaction = new Interaction(renderer, scene, camera);
 
 //load objects
@@ -175,6 +178,7 @@ function moveLeft(){
         if(curScene==0){
             leftArrow.hidden=true;
             canvas.hidden = true;
+            letter.hidden=false;
         }
         if(skyBoxInd!=0){
         scene.background = new THREE.CubeTextureLoader()
@@ -196,6 +200,7 @@ function moveRight(){
         skyBoxInd++;
         leftArrow.hidden=false;
         canvas.hidden=false;
+        letter.hidden=true;
         if(curScene==id){
             rightArrow.hidden=true;
         }
