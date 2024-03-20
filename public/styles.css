@@ -54,6 +54,5 @@ body,html{
 #loading {
     margin-inline: auto;
     top: 50%;
-  transform: translateY(-50%);
     color: orange;
 }
