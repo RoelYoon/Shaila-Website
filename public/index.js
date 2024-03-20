@@ -103,6 +103,29 @@ id++;
 sceneYLock.push(false);
 id++;
 
+//scene 6
+sceneYLock.push(false);
+id++;
+//scene 6
+sceneYLock.push(false);
+id++;
+//scene 6
+sceneYLock.push(false);
+id++;
+//scene 6
+sceneYLock.push(false);
+id++;
+//scene 6
+sceneYLock.push(false);
+id++;
+//scene 6
+sceneYLock.push(false);
+id++;
+//scene 6
+sceneYLock.push(false);
+id++;
+
+
 //citationss
 //addModel(id,0,-5,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://docs.google.com/document/d/1Nw6Z7hcxL_mAxQt1ILiBvgmIji-FTv7d42JROLe_MWE/edit?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
 
