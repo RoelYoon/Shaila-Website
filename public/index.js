@@ -173,6 +173,8 @@ function moveLeft(){
             canvas.hidden = true;
             letter.hidden=false;
             loading.hidden=true;
+        }else{
+            loading.hidden=false;
         }
         if(skyBoxInd!=0){
         scene.background = new THREE.CubeTextureLoader()
@@ -184,7 +186,7 @@ function moveLeft(){
             `ny.png`, //down
             `pz.png`, //center
             `nz.png` //back
-        ] );
+        ], ()=>{loading.hidden=true;});
     }
     }
 }
