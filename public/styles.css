@@ -52,6 +52,7 @@ body,html{
     color: orange;
 }
 #loading {
+    position: absolute;
     margin-inline: auto;
     top: 50%;
     color: orange;
