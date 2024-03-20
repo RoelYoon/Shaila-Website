@@ -121,7 +121,7 @@ controls.enableZoom = false;
 controls.target.x=0;controls.target.y=0;controls.target.z=29.99;
 
 //skybox
-const skyBoxInd = 0; //for randomization later when more skyboxes
+let skyBoxInd = 0; //for randomization later when more skyboxes
 scene.background = new THREE.CubeTextureLoader()
 .setPath( `https://roelyoon.github.io/Portfolio/For Shaila/Skybox/Place${skyBoxInd}/` )
 .load( [
