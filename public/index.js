@@ -208,7 +208,7 @@ function moveRight(){
             `ny.png`, //down
             `pz.png`, //center
             `nz.png` //back
-        ] );
+        ] , ()=>{loading.hidden=true;});
     }
 }
 function leftArrClick(){
