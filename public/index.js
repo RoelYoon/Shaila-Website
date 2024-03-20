@@ -43,6 +43,9 @@ canvas.hidden = true;
 const letter  = document.querySelector("#letter");
 letter.hidden=false;
 
+const loading  = document.querySelector("#loading");
+loading.hidden=true;
+
 const interaction = new Interaction(renderer, scene, camera);
 
 //load objects
@@ -169,6 +172,7 @@ function moveLeft(){
             leftArrow.hidden=true;
             canvas.hidden = true;
             letter.hidden=false;
+            loading.hidden=true;
         }
         if(skyBoxInd!=0){
         scene.background = new THREE.CubeTextureLoader()
@@ -191,6 +195,7 @@ function moveRight(){
         leftArrow.hidden=false;
         canvas.hidden=false;
         letter.hidden=true;
+        loading.hidden=false;
         if(curScene==id){
             rightArrow.hidden=true;
         }

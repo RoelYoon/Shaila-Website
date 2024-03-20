@@ -51,3 +51,8 @@ body,html{
     margin-inline: auto;
     color: orange;
 }
+#loading {
+    margin-inline: auto;
+    margin-top: auto;
+    color: orange;
+}
