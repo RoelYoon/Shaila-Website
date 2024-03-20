@@ -148,8 +148,8 @@ function moveLeft(){
             leftArrow.hidden=true;
         }
         if(skyBoxInd!=0){
-        scene.background.
-setPath( `https://roelyoon.github.io/Portfolio/For Shaila/Skybox/Place${skyBoxInd}/` )
+        scene.background = new THREE.CubeTextureLoader()
+.setPath( `https://roelyoon.github.io/Portfolio/For Shaila/Skybox/Place${skyBoxInd}/` )
 .load( [
             `px.png`, //left
             `nx.png`, //right
@@ -169,8 +169,8 @@ function moveRight(){
         if(curScene==id){
             rightArrow.hidden=true;
         }
-        scene.background.
-setPath( `https://roelyoon.github.io/Portfolio/For Shaila/Skybox/Place${skyBoxInd}/` )
+        scene.background = new THREE.CubeTextureLoader()
+.setPath( `https://roelyoon.github.io/Portfolio/For Shaila/Skybox/Place${skyBoxInd}/` )
 .load( [
             `px.png`, //left
             `nx.png`, //right
