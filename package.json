@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "build": "webpack",
-    "start": "node server.js"
+    "start": "sudo node server.js"
   },
   "repository": {
     "type": "git",
