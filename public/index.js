@@ -39,6 +39,8 @@ renderer.setSize(sizes.width,sizes.height);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.render(scene,camera); 
 
+canvas.hidden = true;
+
 const interaction = new Interaction(renderer, scene, camera);
 
 //load objects
@@ -81,7 +83,7 @@ let y = 0;
 sceneYLock.push(false);
 
 //960 x 720
-addSprite(200,200,1/30,id,0,-8,0,'https://roelyoon.github.io/Portfolio/For Shaila/bluebell.png');
+//addSprite(200,200,1/30,id,0,-8,0,'https://roelyoon.github.io/Portfolio/For Shaila/bluebell.png');
 
 //scene 2
 sceneYLock.push(false);
@@ -173,6 +175,7 @@ function moveLeft(){
         rightArrow.hidden=false;
         if(curScene==0){
             leftArrow.hidden=true;
+            canvas.hidden = false;
         }
         if(skyBoxInd!=0){
         scene.background = new THREE.CubeTextureLoader()
@@ -193,6 +196,7 @@ function moveRight(){
         curScene++;
         skyBoxInd++;
         leftArrow.hidden=false;
+        canvas.hidden=true;
         if(curScene==id){
             rightArrow.hidden=true;
         }
