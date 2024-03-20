@@ -10,6 +10,7 @@ body{
 h1{
     text-align: center;
     color: Orange;
+    font-size: 100px;
 }
 *{
     margin: 0;
@@ -48,4 +49,5 @@ body,html{
    font-family: loverFont;
     max-width: fit-content;
     margin-inline: auto;
+    color: orange;
 }
