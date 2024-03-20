@@ -1,0 +1,28 @@
+{
+  "name": "shaila-website",
+  "version": "1.0.0",
+  "description": "Website for Shaila",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "webpack",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoelYoon/Shaila-Website.git"
+  },
+  "author": "Roel Yoon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoelYoon/Shaila-Website/issues"
+  },
+  "homepage": "https://github.com/RoelYoon/Shaila-Website#readme",
+  "devDependencies": {
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "three": "^0.162.0"
+  }
+}
