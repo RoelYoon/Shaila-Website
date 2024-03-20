@@ -147,6 +147,7 @@ function moveLeft(){
         if(curScene==0){
             leftArrow.hidden=true;
         }
+        if(skyBoxInd!=0){
         scene.background.
 setPath( `https://roelyoon.github.io/Portfolio/For Shaila/Skybox/Place${skyBoxInd}/` )
 .load( [
@@ -157,6 +158,7 @@ setPath( `https://roelyoon.github.io/Portfolio/For Shaila/Skybox/Place${skyBoxIn
             `pz.png`, //center
             `nz.png` //back
         ] );
+    }
     }
 }
 function moveRight(){
