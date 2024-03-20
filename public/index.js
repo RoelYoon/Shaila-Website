@@ -122,6 +122,8 @@ controls.target.x=0;controls.target.y=0;controls.target.z=29.99;
 
 //skybox
 let skyBoxInd = 0; //for randomization later when more skyboxes
+scene.background = new THREE.CubeTextureLoader();
+
 //sprite 
 /*
 const RASpriteMaterial = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Sprites/rightArrow.png' ) } );
