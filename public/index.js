@@ -107,27 +107,17 @@ id++;
 sceneYLock.push(false);
 id++;
 
-//scene 6
+//scene 7
 sceneYLock.push(false);
 id++;
-//scene 6
+//scene 8
 sceneYLock.push(false);
 id++;
-//scene 6
+
+//scene 9
 sceneYLock.push(false);
-id++;
-//scene 6
-sceneYLock.push(false);
-id++;
-//scene 6
-sceneYLock.push(false);
-id++;
-//scene 6
-sceneYLock.push(false);
-id++;
-//scene 6
-sceneYLock.push(false);
-id++;
+//id++;
+
 
 
 //citationss
