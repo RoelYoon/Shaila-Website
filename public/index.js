@@ -123,16 +123,6 @@ controls.target.x=0;controls.target.y=0;controls.target.z=29.99;
 //skybox
 const skyBoxInd = getRandomInt(2); //for randomization later when more skyboxes
 scene.background = new THREE.CubeTextureLoader()
-.setPath( `https://roelyoon.github.io/Portfolio/For Shaila/Skybox/Place4/` )
-.load( [
-            `px.png`, //left
-            `nx.png`, //right
-            `py.png`, //top
-            `ny.png`, //down
-            `pz.png`, //center
-            `nz.png` //back
-        ] );
-/*
 .setPath( `https://roelyoon.github.io/Portfolio/For Shaila/Skybox/Place${skyBoxInd}/` )
 .load( [
             `px.png`, //left
@@ -142,7 +132,6 @@ scene.background = new THREE.CubeTextureLoader()
             `pz.png`, //center
             `nz.png` //back
         ] );
-*/
 //sprite 
 /*
 const RASpriteMaterial = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Sprites/rightArrow.png' ) } );
