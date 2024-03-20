@@ -121,7 +121,7 @@ controls.enableZoom = false;
 controls.target.x=0;controls.target.y=0;controls.target.z=29.99;
 
 //skybox
-const skyBoxInd = getRandomInt(5); //for randomization later when more skyboxes
+const skyBoxInd = 0; //for randomization later when more skyboxes
 scene.background = new THREE.CubeTextureLoader()
 .setPath( `https://roelyoon.github.io/Portfolio/For Shaila/Skybox/Place${skyBoxInd}/` )
 .load( [
@@ -150,33 +150,41 @@ let lerpFrames = 0;
 function moveLeft(){
     if(curScene!=0){
         curScene--;
-        targetCameraPos.x-=moveX; 
-        targetCameraPos.y = 0; 
-        targetCameraPos.z+=curScene<zero?moveZ:moveZ*-1;
-        targetOrbitPos.x-=moveX; 
-        targetOrbitPos.y = 0;
-        targetOrbitPos.z+=curScene<zero?moveZ:moveZ*-1;
+        skyBoxInd--;
         rightArrow.hidden=false;
-        lerpFrames=60;
         if(curScene==0){
             leftArrow.hidden=true;
         }
+        scene.background.
+setPath( `https://roelyoon.github.io/Portfolio/For Shaila/Skybox/Place${skyBoxInd}/` )
+.load( [
+            `px.png`, //left
+            `nx.png`, //right
+            `py.png`, //top
+            `ny.png`, //down
+            `pz.png`, //center
+            `nz.png` //back
+        ] );
     }
 }
 function moveRight(){
     if(curScene!=id){
         curScene++;
-        targetCameraPos.x+=moveX;
-        targetCameraPos.y = 0; 
-        targetCameraPos.z+=curScene<=zero?moveZ*-1:moveZ;
-        targetOrbitPos.x+=moveX;
-        targetOrbitPos.y = 0;
-        targetOrbitPos.z+=curScene<=zero?moveZ*-1:moveZ;
+        skyBoxInd++;
         leftArrow.hidden=false;
-        lerpFrames=60;
         if(curScene==id){
             rightArrow.hidden=true;
         }
+        scene.background.
+setPath( `https://roelyoon.github.io/Portfolio/For Shaila/Skybox/Place${skyBoxInd}/` )
+.load( [
+            `px.png`, //left
+            `nx.png`, //right
+            `py.png`, //top
+            `ny.png`, //down
+            `pz.png`, //center
+            `nz.png` //back
+        ] );
     }
 }
 function leftArrClick(){
