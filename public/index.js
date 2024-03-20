@@ -76,93 +76,20 @@ function addModel(id,xOffset,yOffset,zOffset,scaleFactor,rotationAnim,additional
     scene.add( gltf.scene );
     })
 }
-
+let y = 0;
 //scene 1
 sceneYLock.push(false);
 
-addSprite(200,200,1/30,id,0,-8,0,'https://static.thenounproject.com/png/1342601-200.png');
-
 //960 x 720
-addSprite(960,720,1/30,id,0,0,0,'https://roelyoon.github.io/Portfolio/RUSH/Text/Scene 1/title.png');
+addSprite(200,200,1/30,id,0,-8,0,'https://roelyoon.github.io/Portfolio/For Shaila/bluebell.png');
 
 //scene 2
 sceneYLock.push(false);
 id++;
 
-//title
-addSprite(960,720,1/30,id,0,0,0,'https://roelyoon.github.io/Portfolio/RUSH/Text/Scene 2/title.png');
-
-//thesis
-addSprite(960,720,1/25,id,0,-5,0,'https://roelyoon.github.io/Portfolio/RUSH/Text/Scene 2/s1.png');
-
-//apollo
-//addSprite(564,732,1/31,id,0,-23,0,'https://upload.wikimedia.org/wikipedia/commons/1/13/Apollo_4_Launch_-_GPN-2000-000044.jpg');
-//arms race
-addSprite(551,362,1/22,id,0,-19,0,'https://glikennedy.weebly.com/uploads/1/3/2/0/13201112/6090721.jpg');
-
-
 //scene 3
 sceneYLock.push(false);
 id++;
-
-let y = 0;
-
-//supporting q 1
-addSprite(960,720,1/30,id,0,y,0,'https://roelyoon.github.io/Portfolio/RUSH/Text/Scene 3/title.png');
-
-//s1
-y-=10;
-addSprite(960,720,1/30,id,0,y,0,'https://roelyoon.github.io/Portfolio/RUSH/Text/Scene 3/s1.png');
-
-//comp
-y-=13
-addSprite(500,400,1/20,id,0,y,0,'https://ids.si.edu/ids/deliveryService?id=NASM-A19890006000_PS01&max_w=500');
-//https://d7fcfvvxwoz9e.cloudfront.net/dom43635/wp-content/uploads/2023/08/Explorer_6_paddles_up.jpg
-
-//s2
-y-=12
-addSprite(960,720,1/30,id,0,y,0,'https://roelyoon.github.io/Portfolio/RUSH/Text/Scene 3/s2.png');
-
-//icbm
-y-=14
-addSprite(582,722,1/30,id,0,y,0,'https://media.defense.gov/2012/Mar/05/2000172956/2000/2000/0/120305-F-AR054-001.JPG');
-
-//s3
-y-=14
-addSprite(960,720,1/30,id,0,y,0,'https://roelyoon.github.io/Portfolio/RUSH/Text/Scene 3/s3.png');
-
-//solar panel
-y-=13
-addSprite(737,502,1/25,id,0,y,0,'https://roelyoon.github.io/Portfolio/RUSH/Text/Scene 3/solar.png');
-
-//s4
-y-=13
-addSprite(960,720,1/30,id,0,y,0,'https://roelyoon.github.io/Portfolio/RUSH/Text/Scene 3/s4.png');
-
-//digital camera
-y-=13
-addSprite(582,436,1/20,id,0,y,0,'https://images.squarespace-cdn.com/content/5104bf8be4b0869f6414bed2/1439954219280-SQTIPJGYGNTWAI2KVKRL/?content-type=image%2Fpng');
-
-//s5
-y-=13
-addSprite(960,720,1/30,id,0,y,0,'https://roelyoon.github.io/Portfolio/RUSH/Text/Scene 3/s5.png');
-
-//water and air purifiers
-y-=13
-addSprite(320,286,1/14,id,0,y,0,'https://roelyoon.github.io/Portfolio/RUSH/Text/Scene 3/purifier.png');
-
-//s6
-y-=13
-addSprite(960,720,1/30,id,0,y,0,'https://roelyoon.github.io/Portfolio/RUSH/Text/Scene 3/s6.png');
-
-//Satellites and GPS
-y-=13
-addSprite(478,383,1/18,id,0,y,0,'https://www.wired.com/images_blogs/thisdayintech/2011/02/gps.jpg');
-
-//s7
-y-=13
-addSprite(960,720,1/30,id,0,y,0,'https://roelyoon.github.io/Portfolio/RUSH/Text/Scene 3/s7.png');
-
 
 //scene 4
 sceneYLock.push(false);
@@ -173,7 +100,7 @@ sceneYLock.push(false);
 id++;
 
 //citationss
-addModel(id,0,-5,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://docs.google.com/document/d/1Nw6Z7hcxL_mAxQt1ILiBvgmIji-FTv7d42JROLe_MWE/edit?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
+//addModel(id,0,-5,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://docs.google.com/document/d/1Nw6Z7hcxL_mAxQt1ILiBvgmIji-FTv7d42JROLe_MWE/edit?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
 
 
 //light
@@ -196,7 +123,7 @@ controls.target.x=0;controls.target.y=0;controls.target.z=29.99;
 //skybox
 const skyBoxInd = getRandomInt(2); //for randomization later when more skyboxes
 scene.background = new THREE.CubeTextureLoader()
-.setPath( `https://roelyoon.github.io/Portfolio/RUSH/Skybox/Set${skyBoxInd}/` )
+.setPath( `https://roelyoon.github.io/Portfolio/For Shaila/Skybox/Place4/` )
 .load( [
             `px.png`, //left
             `nx.png`, //right
@@ -205,7 +132,17 @@ scene.background = new THREE.CubeTextureLoader()
             `pz.png`, //center
             `nz.png` //back
         ] );
-
+/*
+.setPath( `https://roelyoon.github.io/Portfolio/For Shaila/Skybox/Place${skyBoxInd}/` )
+.load( [
+            `px.png`, //left
+            `nx.png`, //right
+            `py.png`, //top
+            `ny.png`, //down
+            `pz.png`, //center
+            `nz.png` //back
+        ] );
+*/
 //sprite 
 /*
 const RASpriteMaterial = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Sprites/rightArrow.png' ) } );
