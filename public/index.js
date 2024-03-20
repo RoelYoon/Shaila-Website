@@ -38,7 +38,6 @@ const renderer = new THREE.WebGLRenderer({ canvas });
 renderer.setSize(sizes.width,sizes.height); 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.render(scene,camera); 
-
 canvas.hidden = true;
 
 const interaction = new Interaction(renderer, scene, camera);
@@ -175,7 +174,7 @@ function moveLeft(){
         rightArrow.hidden=false;
         if(curScene==0){
             leftArrow.hidden=true;
-            canvas.hidden = false;
+            canvas.hidden = true;
         }
         if(skyBoxInd!=0){
         scene.background = new THREE.CubeTextureLoader()
@@ -196,7 +195,7 @@ function moveRight(){
         curScene++;
         skyBoxInd++;
         leftArrow.hidden=false;
-        canvas.hidden=true;
+        canvas.hidden=false;
         if(curScene==id){
             rightArrow.hidden=true;
         }
