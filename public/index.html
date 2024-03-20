@@ -5,8 +5,17 @@
         <link rel="icon" href="https://roelyoon.github.io/Portfolio/For Shaila/bluebell2.png">
         <link rel="stylesheet" href="/styles.css"/>
     </head>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "http://35.203.145.230:16/three/build/three.module.js"
+            }
+        }
+    </script>
     <body>
-        
+        <canvas class="webgl" id="mainCanvas"></canvas>
+        <button class="sprites" id="leftArrow"><img src='https://roelyoon.github.io/Portfolio/Sprites/leftArrow.png'/></button>
+        <button class="sprites" id="rightArrow"><img src='https://roelyoon.github.io/Portfolio/Sprites/rightArrow.png'/></button>
     </body>
-    <script src="../dist/index.js"></script>
+    <script type="module" src="/index.js"></script>
 </html>
