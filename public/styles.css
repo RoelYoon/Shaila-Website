@@ -43,3 +43,7 @@ body,html{
     background-color:transparent; 
     border: 0px;
 }
+@font-face { font-family: loverFont; src: url('/LoversQuarrel-Regular.ttf'); } 
+p {
+   font-family: loverFont
+}
